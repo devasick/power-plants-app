@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+* {
+  box-sizing: border-box;
+ }
+ *:before,
+ *:after {
+  box-sizing: border-box;
+ }
+ html,
+ body {
+  height: 100%;
+  position: relative;
+ }
+$bgColor:#fff;
+body{
+    background:$bgColor;
+    color: #2b2b2b;
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+  text-transform: uppercase;
+}
+// Header
+header{
+  nav{
+    height: 9.3vh;
+    line-height: 88px;
+    background: #ffb347;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    ul{
+      a{
+        color: #fff;
+        font-size: 3em;
+        text-transform: uppercase;
+      }
+    }
+    .brand-logo {
+      a{
+        
+      }
+      img{
+      width: 80%;
+      padding: 0;
+    }
+   }
+  } 
+}
+// data list
+.gray-bg{
+ background: #eee;
+  
+}
+ul#page-numbers{
+  text-align: center;
+  li{
+    display:inline-block;
+    padding: 10px;
+  }
+  
+}
+footer.page-footer {
+ 
+  background-color: #000001 !important;
+  text-align: center;
+  padding: 10px;
+  h5{
+    text-transform: uppercase;
+  }
+  p{
+    text-align: justify;
+  }
+  ul{
+    li{
+      margin: 10px 0 10px 0;
+      a{
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+// media query:
+@media only screen and (max-width: 768px) {
+  header nav{
+    height: 10vh;
+  }
+  .movielist .row .col.s6{
+    width: 46%;
+  }
+  .movielist .row .col.m6{
+    width: 100%;
+  }
+
+  header nav .brand-logo img {
+    width: 100%;
+    padding: 7px 19px 5px 20px;
+    background: #fff;
+  }
+}
+
